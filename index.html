@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="PioTech Services : maintenance informatique, réseaux et assistance technique.">
+
+    <title>PioTech Services | Informatique et Réseaux</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- En-tête et navigation -->
+    <header class="header">
+        <nav class="navbar container" aria-label="Navigation principale">
+            <a href="#accueil" class="logo">
+                PioTech<span>Services</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+                aria-controls="navLinks">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section d'accueil -->
+        <section class="hero" id="accueil">
+            <div class="container hero-content">
+                <p class="eyebrow">VOTRE PARTENAIRE INFORMATIQUE</p>
+
+                <h1>
+                    La technologie au service de
+                    <span>votre réussite.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Nous vous accompagnons dans la maintenance de vos
+                    ordinateurs, l'installation de réseaux et le dépannage
+                    informatique.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">
+                        Découvrir nos services
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Nous contacter
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="status-dot"></span>
+                    Des solutions adaptées à vos besoins
+                </div>
+            </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section class="section about" id="apropos">
+            <div class="container about-grid">
+                <div>
+                    <p class="eyebrow">À PROPOS DE NOUS</p>
+
+                    <h2>Une informatique plus simple et plus fiable</h2>
+
+                    <p>
+                        PioTech Services accompagne les particuliers et les
+                        petites entreprises dans leurs besoins informatiques.
+                    </p>
+
+                    <p>
+                        Notre objectif est de proposer des solutions
+                        pratiques pour entretenir les équipements,
+                        améliorer la connectivité et résoudre les problèmes
+                        techniques.
+                    </p>
+                </div>
+
+                <div class="about-card">
+                    <span class="about-icon">💻</span>
+                    <h3>La technologie, en toute confiance</h3>
+                    <p>
+                        Maintenance, installation et assistance :
+                        un accompagnement adapté à chaque projet.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Services -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">NOS COMPÉTENCES</p>
+                    <h2>Nos services informatiques</h2>
+                    <p>
+                        Découvrez les solutions que nous proposons
+                        aux particuliers et aux professionnels.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <span class="service-icon">🖥️</span>
+                        <h3>Maintenance informatique</h3>
+                        <p>
+                            Entretien des ordinateurs, installation de
+                            logiciels, pilotes et systèmes d'exploitation.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-icon">🌐</span>
+                        <h3>Réseaux informatiques</h3>
+                        <p>
+                            Configuration des équipements réseau,
+                            connexion des postes et diagnostic des pannes.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <span class="service-icon">🛡️</span>
+                        <h3>Sécurité informatique</h3>
+                        <p>
+                            Conseils de sécurité, mises à jour,
+                            sauvegardes et bonnes pratiques numériques.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="section contact" id="contact">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">PARLONS DE VOTRE PROJET</p>
+                    <h2>Besoin d'une assistance informatique ?</h2>
+                    <p>
+                        Présentez-nous votre besoin. Remplissez le formulaire
+                        pour préparer votre demande de contact.
+                    </p>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <label for="nom">Votre nom</label>
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Ex. : Pio Assogba"
+                        autocomplete="name"
+                        required>
+
+                    <label for="email">Votre adresse e-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="vous@exemple.com"
+                        autocomplete="email"
+                        required>
+
+                    <label for="service">Service souhaité</label>
+                    <select id="service" name="service" required>
+                        <option value="">Choisissez un service</option>
+                        <option value="Maintenance informatique">
+                            Maintenance informatique
+                        </option>
+                        <option value="Réseaux informatiques">
+                            Réseaux informatiques
+                        </option>
+                        <option value="Sécurité informatique">
+                            Sécurité informatique
+                        </option>
+                        <option value="Autre demande">Autre demande</option>
+                    </select>
+
+                    <label for="message">Votre message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="4"
+                        placeholder="Décrivez votre besoin..."
+                        required></textarea>
+
+                    <button type="submit" class="btn btn-primary">
+                        Préparer ma demande
+                    </button>
+
+                    <p
+                        id="formMessage"
+                        class="form-message"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+<!-- Bouton WhatsApp flottant -->
+<a
+    class="whatsapp-button"
+    href="https://wa.me/229 0141723233"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contacter PioTech Services sur WhatsApp">
+    <span aria-hidden="true">✆</span>
+    Discuter sur WhatsApp
+</a>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© <span id="year"></span> PioTech Services.</p>
+            <p>Votre partenaire informatique.</p>
+        </div>
+    </footer>
+</body>
+</html>
